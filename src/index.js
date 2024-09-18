@@ -6,6 +6,7 @@ const server = express();
 
 server.use(cors());
 server.use(express.json());
+require("dotenv").config();
 
 const port = 5007;
 server.listen(port, () => {
@@ -15,8 +16,8 @@ server.listen(port, () => {
 async function getBDconnection() {
   const connection = await sql.createConnection({
     host: "localhost",
-    user: "root",
-    password: "De.ro.goi.113",
+    user: process.env.ROOT,
+    password: process.env.PASS,
     database: "bd_videojuegos",
   });
   connection.connect();
