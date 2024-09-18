@@ -35,4 +35,20 @@ server.get("/videogames", async (req, res) => {
   });
 });
 
+server.post("/newVideogame", async (req, res) => {
+  const { name, description, release_date, score } = req.body;
+  const connection = await getBDconnection();
+  const query =
+    "INSERT INTO videogame (name, description, release_date, score) VALUES (?,?,?,?)";
+  const [result] = await connection.query(query, [
+    name,
+    description,
+    release_date,
+    score,
+  ]);
 
+  res.status(201).json({
+    status: true,
+    id: result.insertId,
+  });
+});
