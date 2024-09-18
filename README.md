@@ -1,7 +1,7 @@
 Este es un proyecto realizado para el examen final del Módulo 4 del Bootcamp Adalab. En él, se requiría crear una API desde Workbench y hacer ciertas llamadas desde un proyecto, comprobando desde la aplicación Postman,
 su buena realicación. 
 
-En el proyecto se encontrará los diferentes enpoint corespondientes las llamadas de (por orden):
+En el proyecto se encontrará los diferentes enpoint, corespondientes las llamadas (por orden):
 
 GET - Que llama a todos los elementos de la API.
 POST - Que envia un elemento nuevo a la API, rellanando los campos necesarios, corespondientes a la tabla realizada anteriormente en Workbench, donde se alamcena la información.
