@@ -3,8 +3,11 @@ Este es un proyecto realizado para el examen final del Módulo 4 del Bootcamp Ad
 En el proyecto se encontrará los diferentes enpoint, corespondientes las llamadas (por orden):
 
 GET - Que llama a todos los elementos de la base de datos. 
-POST - Que envia un elemento nuevo a la base de datos, rellenando los campos necesarios, corespondientes a la tabla realizada anteriormente en Workbench, donde se alamcena la información. 
+
+POST - Que envia un elemento nuevo a la base de datos, rellenando los campos necesarios, corespondientes a la tabla realizada anteriormente en Workbench, donde se alamcena la información.
+
 PUT - Que modifica un elemento EXISTENTE de la tabla en la base de datos, rellenando los campos que se desean cambiar (estos han de corresponder como en el caso anterior a las KEY de la tabla creada en Workbench).
+
 DELETE - Elimina un elemento deseado, ya exitente, de la base de datos.
 
 Para poder observar si estos cambios son realizados, se han echo diferentes llamadas a Postamn y se ha contemplado directamente estos cambios en la Base de Datos. El proyecto también inclue una carpeta BD donde se adjunta el archivo Script creado en Workbench, donde, en caso de desar probarlo, se puede mirar el nobmre de la tabla y los elementos de ellas, para poder seguir probando los diferentes enpoints creados.
